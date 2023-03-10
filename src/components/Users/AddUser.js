@@ -1,4 +1,6 @@
-import React from "react";
+import React from 'react';
+import Card from  '../UI/Card';
+import classes from './AddUser.module.css';
 
 
 const AddUser= props =>{
