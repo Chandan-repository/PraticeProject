@@ -8,6 +8,7 @@ const AddUser= props =>{
     event.preventDefault();
   };
  return(
+   <card className={classes.input}>
    <form onSubmit={addUserHandler}>
     <label htmlFor="username">Username</label>
     <input id="username" tyep="text"/>
@@ -15,6 +16,7 @@ const AddUser= props =>{
     <input id="age" type="number"/>
     <button type="submit">AddUser</button>
    </form>
+   </card>
  );
 
 };
