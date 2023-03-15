@@ -11,7 +11,7 @@ const AddUser = (props) => {
   const nameInputRef = useRef();
   const ageInputRef = useRef();
 
-;
+
   const [error, setError] = useState();
 
   const addUserHandler = (event) => {
@@ -54,9 +54,13 @@ const AddUser = (props) => {
    <Card className={classes.input}>
         <form onSubmit={addUserHandler}>
           <label htmlFor="username">Username</label>
-          <input id="username" type="text" ref={nameInputRef} />
+          <input id="username" 
+          type="text" 
+          ref={nameInputRef} />
           <label htmlFor="age">Age (Years)</label>
-          <input id="age" type="number" ref={ageInputRef} />
+          <input id="age" 
+          type="number"
+          ref={ageInputRef} />
           <Button type="submit">Add User</Button>
         </form>
       </Card>
